@@ -1,0 +1,3 @@
+name: Julian Teh
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
