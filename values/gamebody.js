@@ -11,4 +11,4 @@ for (var a = 0; a <= 5; a++) {
     } document.write(' <\/tr>');
 }
 
-document.write('<\/table> < form name = "mem" > <input type="button" id="cnt" value="0:00" onclick="window.start()" \ /> <\ /form ><\/div>');
+document.write('<\/table> < form name = "mem" > <input type="button" id="cnt" value="" onclick="window.start()" \ /> <\ /form ><\/div>');

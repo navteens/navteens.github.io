@@ -11,16 +11,21 @@ function randOrd(a, b) {
     return (Math.round(Math.random()) - 0.5);
 }
 
+function card(name) {
+    return '<img src="' + name + '" width="20%" height="20%" alt="tile" \/>';
+}
+
+function displayBack(i) {
+    document.getElementById('t' + i).innerHTML = '<div onclick="disp(' + i + ');return false;">' + card(back) + '<\/div>';
+}
+
+
 var im = [];
 for (var i = 0; i < 15; i++) {
     im[i] = new Image();
     im[i].src = tile[i];
-    tile[i] = '<img src="' + tile[i] + '" width="60" height="60" alt="tile" \/>';
+    tile[i] = card(tile[i]);
     tile[i + 15] = tile[i];
-}
-
-function displayBack(i) {
-    document.getElementById('t' + i).innerHTML = '<div onclick="disp(' + i + ');return false;"><img src="' + back + '" width="60" height="60" alt="back" \/><\/div>';
 }
 
 var ch1, ch2, tmr, tno, tid, cid, cnt;
