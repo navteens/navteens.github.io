@@ -6,10 +6,11 @@ document.write('<div align="center">');
 
 document.write('<table cellpadding="0" cellspacing="0" border ="0">');
 
-for (var a = 0; a <= 5; a++) {
+// Create a grid of cards
+for (var a = 0; a < gridWidth; a++) {
     document.write('<tr>');
-    for (var b = 0; b <= 4; b++) {
-        document.write('<td align="center" class="blk" id = "t' + ((5 * a) + b) + '"></td>');
+    for (var b = 0; b < gridWidth; b++) {
+        document.write('<td align="center" class="blk" id = "' + cards[(gridWidth * a) + b] + '"></td>');
     } document.write('<\/tr>');
 }
 
