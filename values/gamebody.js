@@ -9,7 +9,7 @@ gridWidth = 4;
 for (var x = 0; x < document.getElementById('size'); x++) {
     document.write('<tr>');
     // for (var y = 0; y < gridWidth; y++) {
-    document.write('<td align="center" class="blk" id = "' + cards[(gridWidth * x) + y] + '"></td>');
+    document.write('<td align="center" class="blk" id = "' + cards[x] + '"></td>');
     // } 
     document.write('<\/tr>');
 }
