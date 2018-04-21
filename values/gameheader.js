@@ -51,15 +51,3 @@ function select(sel) {
 
     choices.push(sel);
 }
-
-function conceal() {
-    tno = 0;
-    if (tile[ch1] != tile[ch2]) {
-        displayBack(ch1);
-        displayBack(ch2);
-    }
-    else
-        cnt++;
-    if (cnt >= 15)
-        clearInterval(tid);
-}
