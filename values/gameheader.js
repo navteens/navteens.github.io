@@ -2,7 +2,7 @@
 var empty = 'back.gif';
 var cards = ['img0.gif', 'img1.gif', 'img2.gif', 'img3.gif', 'img4.gif', 'img5.gif',
     'img6.gif', 'img7.gif', 'img8.gif', 'img9.gif', 'img10.gif', 'img11.gif',
-    'img12.gif', 'img13.gif', 'img14.gif'];
+    'img12.gif', 'img13.gif', 'img14.gif', 'img15.gif'];
 
 function htmlcard(name) {
     return '<img src="' + name + '" alt="cards" \/>';

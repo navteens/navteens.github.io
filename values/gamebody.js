@@ -6,6 +6,8 @@ document.write('<div align="center">');
 
 document.write('<table cellpadding="0" cellspacing="0" border ="0">');
 
+gridWidth = 4;
+
 // Create a grid of cards
 for (var a = 0; a < gridWidth; a++) {
     document.write('<tr>');
