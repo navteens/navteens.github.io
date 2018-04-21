@@ -12,39 +12,39 @@ function card(name) {
     return '<img src="' + name + '" alt="tile" \/>';
 }
 
-function displayBack(i) {
+function displaycard(i) {
     document.getElementById('t' + i).innerHTML = '<div onclick="select(' + i + ');return false;">' + card(empty) + '<\/div>';
 }
 
-
-var im = [];
+var img = [];
 for (var i = 0; i < 15; i++) {
-    im[i] = new Image();
-    im[i].src = tile[i];
+    img[i] = new Image();
+    img[i].src = tile[i];
     tile[i] = card(tile[i]);
-    tile[i + 15] = tile[i];
 }
 
 var choices = [];
 var tmr, tno, tid, cid, cnt;
+
+// Specifying the function to call when loading
 window.onload = start;
 
 function start() {
     for (var i = 0; i <= 29; i++)
-        displayBack(i);
-    clearInterval(tid);
-    tmr = tno = cnt = 0;
+        displaycard(i);
+    // clearInterval(tid);
+    tmr = cnt = 0;
     tile.sort(randOrd);
     cntr();
-    tid = setInterval('cntr()', 1000);
+    // tid = setInterval('cntr()', 1000);
 }
 
-function cntr() {
-    var min = Math.floor(tmr / 60);
-    var sec = tmr % 60;
-    document.getElementById('cnt').value = min + ':' + (sec < 10 ? '0' : '') + sec;
-    tmr++;
-}
+// function cntr() {
+//     var min = math.floor(tmr / 60);
+//     var sec = tmr % 60;
+//     document.getelementbyid('cnt').value = min + ':' + (sec < 10 ? '0' : '') + sec;
+//     tmr++;
+// }
 
 function select(sel) {
     document.getElementById('t' + sel).innerHTML = tile[sel];
