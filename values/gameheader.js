@@ -12,7 +12,7 @@ function randOrd(a, b) {
 }
 
 function card(name) {
-    return '<img src="' + name + '" width="20%" height="20%" alt="tile" \/>';
+    return '<img src="' + name + '" alt="tile" \/>';
 }
 
 function displayBack(i) {
