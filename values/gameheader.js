@@ -1,8 +1,5 @@
-// Concentration Memory Game with Images - Head Script
-// copyright Stephen Chapman, 28th February 2006, 24th December 2009
-// you may copy this script provided that you retain the copyright notice
 
-var back = 'back.gif';
+var empty = 'back.gif';
 var tile = ['img0.gif', 'img1.gif', 'img2.gif', 'img3.gif', 'img4.gif', 'img5.gif',
     'img6.gif', 'img7.gif', 'img8.gif', 'img9.gif', 'img10.gif', 'img11.gif',
     'img12.gif', 'img13.gif', 'img14.gif'];
@@ -16,7 +13,7 @@ function card(name) {
 }
 
 function displayBack(i) {
-    document.getElementById('t' + i).innerHTML = '<div onclick="disp(' + i + ');return false;">' + card(back) + '<\/div>';
+    document.getElementById('t' + i).innerHTML = '<div onclick="select(' + i + ');return false;">' + card(empty) + '<\/div>';
 }
 
 
@@ -28,7 +25,8 @@ for (var i = 0; i < 15; i++) {
     tile[i + 15] = tile[i];
 }
 
-var ch1, ch2, tmr, tno, tid, cid, cnt;
+var choices = [];
+var tmr, tno, tid, cid, cnt;
 window.onload = start;
 
 function start() {
@@ -48,20 +46,10 @@ function cntr() {
     tmr++;
 }
 
-function disp(sel) {
-    if (tno > 1) {
-        clearTimeout(cid);
-        conceal();
-    }
+function select(sel) {
     document.getElementById('t' + sel).innerHTML = tile[sel];
-    if (tno == 0)
-        ch1 = sel;
-    else {
-        ch2 = sel;
-        cid = setTimeout('conceal()', 900);
-    }
 
-    tno++;
+    choices.push(sel);
 }
 
 function conceal() {
