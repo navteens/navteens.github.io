@@ -1,6 +1,3 @@
-// Concentration Memory Game with Images - Body Script
-// copyright Stephen Chapman, 28th February 2006, 24th December 2009
-// you may copy this script provided that you retain the copyright notice
 
 document.write('<div align="center">');
 
@@ -8,13 +5,23 @@ document.write('<table cellpadding="0" cellspacing="0" border ="0">');
 
 gridWidth = 4;
 
-// Create a grid of cards
-for (var a = 0; a < gridWidth; a++) {
+// Create x grid of cards
+for (var x = 0; x < document.getElementById('size'); x++) {
     document.write('<tr>');
-    for (var b = 0; b < gridWidth; b++) {
-        document.write('<td align="center" class="blk" id = "' + cards[(gridWidth * a) + b] + '"></td>');
-    } document.write('<\/tr>');
+    // for (var y = 0; y < gridWidth; y++) {
+    document.write('<td align="center" class="blk" id = "' + cards[(gridWidth * x) + y] + '"></td>');
+    // } 
+    document.write('<\/tr>');
 }
+
+// Create x grid of cards
+// for (var x = 0; x < gridWidth; x++) {
+//     document.write('<tr>');
+//     for (var y = 0; y < gridWidth; y++) {
+//         document.write('<td align="center" class="blk" id = "' + selected[(gridWidth * x) + y] + '"></td>');
+//     } document.write('<\/tr>');
+// }
+
 
 document.write('<\/table>');
 
