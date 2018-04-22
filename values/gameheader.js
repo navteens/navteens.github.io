@@ -1,3 +1,4 @@
+var fs = require('fs');
 
 var empty = 'back';
 var cards = ['img0', 'img1', 'img2', 'img3', 'img4', 'img5',
@@ -6,18 +7,21 @@ var cards = ['img0', 'img1', 'img2', 'img3', 'img4', 'img5',
 
 // Creates the html object for a card
 function htmlcard(name) {
-    return '<img src="' + name + '.png" alt="cards" \/>';
+    return '<img src="' + name + '.png" alt="' + name + '" \/>';
 }
 
 // Sets the html code for a card
-function makecard(i) {
-    document.getElementById('card' + i).innerHTML = '<div onclick="select(' + i + ');">' + htmlcard(empty) + '<\/div>';
+function makecard(name) {
+    document.getElementById('card-' + name).innerHTML = '<div onclick="select(' + name + ');">' + htmlcard(empty) + '<\/div>';
 }
 
 // Specifying the function to call when loading
 window.onload = load;
 
 function load() {
+    var files = fs.readdirSync("");
+    console.log(files);
+
     document.getElementById('size') = cards.length;
 
     // Sets up the images and cards with html
@@ -35,9 +39,8 @@ function load() {
     });
 }
 
-var selected = [];
 function select(i) {
-    document.getElementById('card' + i).innerHTML = cards[i];
+    document.getElementById('card-' + i).innerHTML = cards[i];
 
     document.getElementById('selected' + i).innerHTML = cards[i];
 }
