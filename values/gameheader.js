@@ -16,9 +16,6 @@ function makecard(name) {
 window.onload = load;
 
 function load() {
-    var files = fs.readdirSync("");
-    console.log(files);
-
     document.getElementById('size') = cards.length;
 
     // Sets up the images and cards with html
