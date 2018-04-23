@@ -17,6 +17,7 @@ window.onload = load;
 
 function load() {
     document.getElementById('size') = cards.length;
+    console.log("Number of cards: " + document.getElementById('size'));
 
     // Sets up the images and cards with html
     var img = [];
@@ -25,16 +26,20 @@ function load() {
         img[i].src = cards[i];
         cards[i] = htmlcard(cards[i]);
         makecard(i);
+
+        console.log("Made card: " + cards[i]);
     }
 
-    // Randomizes the order of the cards
-    cards.sort((a, b) => {
-        return (Math.round(Math.random()) - 0.5);
-    });
+    // // Randomizes the order of the cards
+    // cards.sort((a, b) => {
+    //     return (Math.round(Math.random()) - 0.5);
+    // });
 }
 
-function select(i) {
-    document.getElementById('card-' + i).innerHTML = cards[i];
+function select(name) {
+    document.getElementById('card-' + name).innerHTML = cards[i];
 
-    document.getElementById('selected' + i).innerHTML = cards[i];
+    document.getElementById('selected-' + name).innerHTML = cards[i];
+
+    console.log("Selected " + cards[i]);
 }
