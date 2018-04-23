@@ -9,7 +9,7 @@ function htmlcard(name) {
 
 // Sets the html code for a card
 function makecard(name) {
-    document.getElementById('card-' + name).innerHTML = '<div onclick="select(' + name + ');">' + htmlcard(empty) + '<\/div>';
+    document.getElementById('card-' + name).innerHTML = '<div onclick="select(' + name + ');"><\/div>';
 }
 
 // Specifying the function to call when loading
