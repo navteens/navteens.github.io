@@ -13,12 +13,19 @@ function makecard(name) {
     document.getElementById('card-' + name).innerHTML = '<div onclick="select(' + name + ');"><\/div>';
 }
 
-// Specifying the function to call when loading
-window.onload = load;
+function select(name) {
+    document.getElementById('card-' + name).innerHTML = cards[i];
+
+    document.getElementById('selected-' + name).innerHTML = cards[i];
+
+    console.log("Selected " + cards[i]);
+}
 
 function load() {
-    document.getElementById('size').value = cards.length;
-    console.log("Number of cards: " + document('size').value);
+    var sizeElem = document.createElement('size');
+    sizeElem.setAttribute('value', cards.length);
+
+    console.log("Number of cards: " + document.getElementById('size').getAttribute('value'));
 
     return;
 
@@ -34,10 +41,6 @@ function load() {
     }
 }
 
-function select(name) {
-    document.getElementById('card-' + name).innerHTML = cards[i];
 
-    document.getElementById('selected-' + name).innerHTML = cards[i];
-
-    console.log("Selected " + cards[i]);
-}
+// Specifying the function to call when loading
+window.onload = load;
