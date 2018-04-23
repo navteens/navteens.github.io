@@ -16,8 +16,10 @@ function makecard(name) {
 window.onload = load;
 
 function load() {
-    // document.getElementById('size').innerHTML = cards.length;
-    // console.log("Number of cards: " + document.getElementById('size').innerHTML);
+    document.createElement('size').nodeValue = cards.length;
+    console.log("Number of cards: " + document.getElementsByName('size').nodeValue);
+
+    return;
 
     // Sets up the images and cards with html
     var img = [];
