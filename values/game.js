@@ -24,8 +24,9 @@ function select(name) {
 function load() {
     var sizeElem = document.createElement('size');
     sizeElem.setAttribute('value', cards.length);
+    sizeElem.id = 'size';
 
-    console.log("Number of cards: " + document.getElementByName('size').getAttribute('value'));
+    console.log("Number of cards: " + document.getElementById('size').getAttribute('value'));
 
     return;
 
