@@ -22,9 +22,7 @@ function select(name) {
 }
 
 function load() {
-    var sizeElem = document.createElement('size');
-    sizeElem.setAttribute('value', cards.length);
-    sizeElem.id = 'size';
+    document.getElementById('size').innerHTML = '<object value=' + cards.length + '><\/object>';
 
     console.log("Number of cards: " + document.getElementById('size').getAttribute('value'));
 
