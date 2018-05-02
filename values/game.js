@@ -25,7 +25,7 @@ function load() {
     var sizeElem = document.createElement('size');
     sizeElem.setAttribute('value', cards.length);
 
-    console.log("Number of cards: " + document.getElementById('size').getAttribute('value'));
+    console.log("Number of cards: " + document.getElementByName('size').getAttribute('value'));
 
     return;
 
