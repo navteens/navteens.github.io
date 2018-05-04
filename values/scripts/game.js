@@ -9,6 +9,7 @@ class Game {
         createjs.Ticker.on("tick", this.stage);
 
         var circle = new createjs.Shape();
+        circle.graphics.beginFill("blue").drawCircle(0, 0, 40);
         circle.x = 100;
         circle.y = 200;
         this.stage.addChild(circle);
