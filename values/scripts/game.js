@@ -5,7 +5,8 @@ class Game {
         this.canvas = document.getElementById("game-canvas");
         this.stage = new createjs.Stage(this.canvas);
 
-        createjs.Ticker.on("tick", this.stage);
+        createjs.Ticker.framerate = 30;
+        createjs.Ticker.addEventListener("tick", this.stage);
 
         var circle = new createjs.Shape();
         circle.graphics.beginFill("blue").drawCircle(0, 0, 40);
