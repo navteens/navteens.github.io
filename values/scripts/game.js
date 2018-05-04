@@ -9,10 +9,16 @@ class Game {
         createjs.Ticker.addEventListener("tick", this.stage);
 
         var circle = new createjs.Shape();
-        circle.graphics.beginFill("blue").drawCircle(0, 0, 40);
+        circle.graphics.beginFill("#00ff00").drawCircle(0, 0, 40);
         circle.x = 100;
         circle.y = 200;
         this.stage.addChild(circle);
+
+        var square = new createjs.Shape();
+        square.graphics.beginFill("gold").drawRect(0, 0, 100, 100);
+        square.x = 500;
+        square.y = 500;
+        this.stage.addChild(square);
     }
 }
 
