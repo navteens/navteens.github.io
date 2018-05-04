@@ -6,7 +6,9 @@ class Game {
         this.stage = new createjs.Stage(this.canvas);
 
         createjs.Ticker.framerate = 30;
-        createjs.Ticker.addEventListener("tick", this.stage);
+        createjs.Ticker.addEventListener("tick", (event) => {
+            this.stage.update()
+        });
 
         console.log("Framerate=" + createjs.Ticker.framerate);
 
