@@ -14,16 +14,16 @@ class Game {
 
         var circle = new createjs.Shape();
         circle.graphics.beginFill("#00ff00").drawCircle(0, 0, 400);
-        circle.x = 1000;
-        circle.y = 200;
+        circle.x = 10;
+        circle.y = 20;
         this.stage.addChild(circle);
 
         console.log("Made a circle");
 
         var square = new createjs.Shape();
         square.graphics.beginFill("gold").drawRect(0, 0, 1000, 1000);
-        square.x = 500;
-        square.y = 500;
+        square.x = 50;
+        square.y = 50;
         this.stage.addChild(square);
 
         console.log("Made a square");
