@@ -3,7 +3,7 @@ class Game {
         console.log("Creating Game object");
 
         this.canvas = document.getElementById("game-canvas");
-        this.stage = new createjs.Stage(this.canvas);
+        this.stage = new createjs.Stage("game-canvas");
 
         createjs.Ticker.framerate = 30;
         createjs.Ticker.addEventListener("tick", (event) => {
