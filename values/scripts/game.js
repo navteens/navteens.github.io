@@ -13,7 +13,7 @@ class Game {
         console.log("Framerate=" + createjs.Ticker.framerate);
 
         var circle = new createjs.Shape();
-        circle.graphics.beginFill("#00ff00").drawCircle(0, 0, 400);
+        circle.graphics.beginFill("#00ff00").drawCircle(0, 0, 40);
         circle.x = 10;
         circle.y = 20;
         this.stage.addChild(circle);
@@ -21,7 +21,7 @@ class Game {
         console.log("Made a circle");
 
         var square = new createjs.Shape();
-        square.graphics.beginFill("gold").drawRect(0, 0, 1000, 1000);
+        square.graphics.beginFill("gold").drawRect(0, 0, 100, 100);
         square.x = 50;
         square.y = 50;
         this.stage.addChild(square);
