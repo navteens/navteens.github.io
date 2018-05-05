@@ -31,7 +31,7 @@ class Game {
         var img = new createjs.Bitmap("images/img0.png");
         img.x = 200;
         img.y = 50;
-        this.stage.addChild(square);
+        this.stage.addChild(img);
     }
 }
 
