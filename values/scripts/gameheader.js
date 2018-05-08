@@ -1,4 +1,3 @@
-
 var cards = ['img0', 'img1', 'img2', 'img3', 'img4', 'img5',
     'img6', 'img7', 'img8', 'img9', 'img10', 'img11',
     'img12', 'img13', 'img14', 'img15'];
@@ -17,11 +16,6 @@ function makecard(name) {
 window.onload = load;
 
 function load() {
-    document.getElementById('size').value = cards.length;
-    console.log("Number of cards: " + document('size').value);
-
-    return;
-
     // Sets up the images and cards with html
     var img = [];
     for (var i = 0; i < cards.length; i++) {

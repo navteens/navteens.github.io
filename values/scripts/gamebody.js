@@ -6,11 +6,11 @@ document.write('<table cellpadding="0" cellspacing="0" border ="0">');
 gridWidth = 4;
 
 // Create x grid of cards
-for (var x = 0; x < document.getElementById('size'); x++) {
+for (var x = 0; x < gridWidth; x++) {
     document.write('<tr>');
-    // for (var y = 0; y < gridWidth; y++) {
-    document.write('<td align="center" class="blk" id = "' + cards[x] + '"></td>');
-    // } 
+    for (var y = 0; y < gridWidth; y++) {
+        document.write('<td align="center" class="blk" id = "' + cards[x * gridWith + y] + '"></td>');
+    }
     document.write('<\/tr>');
 }
 
