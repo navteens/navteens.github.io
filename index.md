@@ -11,5 +11,5 @@ This is The Navteens Space
 
 ---
 
-Pages:
-[BB 21st Coy Character Quest](/bb21cq)
+Subspaces:
+* [BB 21st Coy Character Quest](/bb21cq)
