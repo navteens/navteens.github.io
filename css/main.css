@@ -195,4 +195,5 @@ img {
 
 .link:hover {
     color: var(--text-color-link-hover);
+    cursor: grabbing;
 }
