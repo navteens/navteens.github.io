@@ -1,2 +1,2 @@
 ### Quizzes
-* [David and Jonathan](/bb21cq/quiz/dandj)
+[David and Jonathan](/bb21cq/quiz/dandj)
