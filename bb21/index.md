@@ -7,7 +7,9 @@ title: BB 21st
 
 ---
 
-![BB Logo](/images/bblogo.jpg)
+<html>
+    <img class="menu-gallery-img" src="/images/bblogo.jpg" alt="Boys Brigade">
+</html>
 
 ---
 
