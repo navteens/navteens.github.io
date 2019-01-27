@@ -145,7 +145,7 @@ foot, footer {
 }
 
 img {
-    width: auto;
+    width: 75%;
     height: auto;
     padding: var(--spacing-unit);
 }
