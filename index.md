@@ -12,4 +12,4 @@ This is The Navteens Space
 ---
 
 Subspaces:
-* [BB 21st Coy Character Quest](/bb21cq)
+* [BB 21st Coy](/bb21)
