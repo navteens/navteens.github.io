@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Alone; Finding connection in a lonely world
-img: alone.jpg
+img: _posts/alone.jpg
 ---
 
 # Alone: Finding connection in a lonely world
