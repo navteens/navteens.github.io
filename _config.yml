@@ -7,12 +7,11 @@
 
 # Site settings
 title: Navteens Space
-email: navteens.@gmail.com
+email: navteens@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Webjeda Cards is a Bootstrap based jekyll theme for portfolio, photography or any kind of blog.
+  We are the youth wing of The Navigators, Singapore; we seek to know Christ, to make Him known, and to help others do the same!
   
-  
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://navteens.space" # the base hostname & protocol for your site
 
 #sidebar
@@ -24,7 +23,7 @@ built-by: navteens
 
 copyright:
    name: navteens
-   link: 'http://blog.navteens.space'
+   link: 'http://navteens.space'
 
 # Build settings
 markdown: kramdown
