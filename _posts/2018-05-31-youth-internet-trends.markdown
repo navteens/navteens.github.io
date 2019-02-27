@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Youth Internet Trends
-img: post_youth-tech-trends-2018.jpg
+img: post_youth-tech-trends-2018.png
 ---
 
 # Pew Research Center: Teens, Social Media & Technology 2018
