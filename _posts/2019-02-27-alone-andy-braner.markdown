@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Alone; Andy Braner
-img: alone-andy-braner.jpg
+img: post_alone-andy-braner.jpg
 ---
 
 # Alone: Finding connection in a lonely world
