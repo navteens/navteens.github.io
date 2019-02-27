@@ -4,8 +4,6 @@ title: Navteens
 permalink: /about/
 ---
 
-This space presents the digital face of The Navteens to the world. 
-
-The Navteens is a youth organization in Singapore focused on discipleship among youth. 
+We are the youth wing of The Navigators, Singapore; we seek to know Christ, to make Him known, and to help others do the same!
 
 For more information check out our [official website](https://navigators.org.sg/ministries/the-navteens/)!
